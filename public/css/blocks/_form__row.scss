@@ -1,0 +1,25 @@
+.form__row {
+    display: flex;
+    margin-bottom: rem(13px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include tablets {
+        margin-bottom: rem(24px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include phones {
+        margin-bottom: rem(21px);
+
+        &:last-child {
+            margin-bottom: 0;
+            //margin-bottom: rem(26px);
+        }
+    }
+}

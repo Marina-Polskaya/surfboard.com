@@ -1,0 +1,54 @@
+.options {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: rem(21px);
+
+    @include tablets {
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(24px);
+    }
+
+    @include phones {
+        margin-bottom: rem(20px);
+        font-size: rem(18px);
+    }
+
+}
+
+.options__item {
+    margin-right: rem(52px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include phones {
+        margin-right: rem(82px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.options__title {
+    margin-bottom: rem(3px);
+}
+
+.options__description {
+    display: flex;
+    font-weight: 700;
+}
+
+.options__description-text {
+    margin-right: rem(3px);    
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.options__description-value {
+    margin-right: rem(3px);
+}

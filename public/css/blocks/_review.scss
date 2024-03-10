@@ -1,0 +1,26 @@
+.review {
+    padding-top: rem(24px);
+    
+    @include tablets {
+        padding-bottom: 25%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
+}
+
+.review__container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3.4%;
+}
+
+.review__title {
+    
+    @include phones {
+        margin-bottom: 8px;
+    }
+}

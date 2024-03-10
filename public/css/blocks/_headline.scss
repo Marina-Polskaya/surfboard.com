@@ -1,0 +1,40 @@
+.headline {
+    margin-bottom: rem(44px);
+    text-align: center;
+
+    @include tablets {
+        margin-bottom: rem(53px);
+    }
+
+    @include phones {
+        margin-bottom: 12%;
+    }
+
+}
+
+.headline__title {
+    margin-bottom: rem(17px);
+
+    @include tablets {
+        margin-bottom: rem(22px);
+    }
+
+    @include phones {
+        margin-bottom: rem(7px);
+    }
+}
+
+.headline__subtitle {
+    margin: 0 auto;
+    width: 46%;
+    line-height: rem(25px);
+    color: $descTextColor;
+
+    @include tablets {
+        width: 60%;
+    }
+
+    @include phones {
+        width: 97%;
+    }
+}

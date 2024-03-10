@@ -1,0 +1,39 @@
+.hero__icons-container {
+    display: flex;
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
+
+}
+
+.hero__icons {
+    display: flex;
+    margin-right: rem(30px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.hero__icon {
+    margin-right: rem(11px);
+    flex-shrink: 0;
+}
+
+.hero__icon-img {
+    width: rem(41px);
+    height: rem(41px);
+    fill: white;
+}
+
+.hero__icon-description {
+    width: rem(90px);
+    font-size: rem(16px);
+    line-height: rem(18px);
+    font-weight: 700;
+}

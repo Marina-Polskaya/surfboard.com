@@ -1,0 +1,52 @@
+.arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: rem(24px);
+    height: 100%;
+    flex-shrink: 0;
+    border: none;
+    background-color: initial;
+    cursor: pointer;
+
+    @include tablets {
+        height: rem(40px);
+        position: absolute;
+        z-index: 1;
+
+        &:first-child {
+            top: 31%;
+            right: 85.4%;
+        }
+
+        &:last-child {
+            top: 31%;
+            left: 85.4%;
+        }
+    }
+
+    @include phones {
+        height: 100%;
+        
+        &:first-child {
+            top: 0;
+            right: 96%;
+        }
+
+        &:last-child {
+            top: 0;
+            left: 96%;
+        }
+    }
+}
+
+.arrow__img {
+    width: rem(24px);
+    height: rem(40px);
+    align-items: center;
+}
+
+.arrow__img-rotate {
+    transform: rotate(180deg);
+}
